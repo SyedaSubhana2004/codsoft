@@ -215,3 +215,8 @@ button:hover {
 .airways:hover img {
   transform: scale(1.1); /* Optionally, scale up the image on hover */
 }
+@media screen and (max-width :600px){
+  asia,section,article{
+  width:100%;
+  }
+}

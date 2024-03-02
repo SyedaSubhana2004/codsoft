@@ -1,0 +1,552 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #0d6595; /* Change background color as needed */
+    color: white;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Add this line to center items vertically */
+  }
+  
+  /* Logo styling */
+.logo {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 60px;
+  }
+  .nav-links li:last-child {
+    margin-right: 0;
+  }
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .nav-links li a:hover {
+    color:rgb(16, 36, 54); /* Change hover color as needed */
+  }
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right img {
+    height: 40px; /* Adjust the height of the bag icon as needed */
+    margin-left: 20px;
+    margin-right: 20px; /* Add spacing between links and the bag icon */
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  .right a.btn {
+    background-color: #92cbea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px; /* Adjust spacing between buttons */
+  }
+  
+  .right a.btn:hover {
+    background-color: #e4fbff;
+    color: #000000;
+  }
+  
+  .right img {
+    height: 30px;
+    margin-left: 10px; /* Adjust spacing between buttons and bag image */
+  }
+  .animated-image {
+    opacity: 0; /* Start with image hidden */
+    transition: opacity 1s ease; /* Smooth transition */
+  }
+  
+  .animated-image.fade-in {
+    opacity: 1; /* Show image when fade-in class is applied */
+  }
+  #image1{
+    float:right;
+    margin-right: 10pm;
+  }
+  .container1{
+    margin-left:px;
+  }
+  #mytext1{
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  #mytext2{
+    margin-left: 20px;
+    font-size: 50px;
+  }
+  .title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 70px;
+    color: black;
+  }
+  
+  .highlight {
+    color: blue;
+  }
+  #mytext3{
+    font-size: 15px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Align to the right */
+    transform: translateY(-50%);
+    color: white;
+    text-align: right; /* Align text to the right */
+    padding: 20px; /* Add padding for better readability */
+  }
+  
+  .text-overlay h1 {
+    font-size: 80px;
+    margin-bottom: 10px; /* Add margin between h1 and h5 */
+  }
+  
+  .text-overlay h5 {
+    font-size: 40px;
+    margin-top: 0; /* Reset default margin */
+  }
+  #Destinations {
+    padding: 50px 0;
+  }
+  
+  .destination-group {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .destination {
+    text-align: center;
+    max-width: 300px;
+    margin-right: 80px;
+    margin-left: 120px;
+    margin-top: 30px;
+  }
+  
+  .destination img {
+    width: 400PX;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    margin-left: -50px;
+  }
+  
+  .destination h3 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  
+  .destination p {
+    margin: 5px 0;
+  }
+  
+  .reviews {
+    margin-top: 10px;
+  }
+  
+  .star {
+    color: gold;
+    font-size: 18px;
+  }
+  
+  .destination:hover img {
+    transform: scale(1.1); /* Increase image size on hover */
+  }
+  /* Adjust the transition for a smooth effect */
+  .destination img{
+    transition: all 0.3s ease;
+  }
+  .additional-info {
+    display: none;
+  }
+  
+  .destination:hover .additional-info {
+    display: block;
+  }
+  .book-now{
+    padding: 15px 90px;
+    font-family:Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: aliceblue#0d6595;
+    color:#0d6595;
+  }
+  .book-now:hover {
+    background-color: #0d6595;
+    color:aliceblue;
+  }
+  
+  .container4{
+    background-color: #0d6595;
+    
+  }
+  #Todays-Deal .container4 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+  
+  #Todays-Deal .destination-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep images in a single line */
+    justify-content: center;
+  }
+  
+  #Todays-Deal .destination {
+    text-align: center;
+    max-width: 300px;
+    margin: 60px; /* Adjust margin as needed */
+    
+  }
+  
+  #Todays-Deal .destination img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  #Todays-Deal .container4 {
+    background-color: #0d6595;
+    padding: 20px; /* Add padding to ensure the background color extends */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  /* Position the like icon */
+  .destination {
+    position: relative;
+  }
+  
+  /* Position the like icon */
+  .like-icon {
+    position: absolute;
+    top: 10px; /* Adjust this value to move the heart icon up or down */
+    right: -140px; ; /* Adjust this value to move the heart icon left or right */
+    width: 40px !important; /* Adjust the size of the heart icon */
+    height: 40px !important; /* Adjust the size of the heart icon */
+    background-image: url('images1/heart.png'); /* Add your like icon image URL here */
+    background-size: cover;
+    cursor: pointer;
+    z-index: 1; /* Ensure the icon appears above other content */
+    filter: brightness(0) saturate(100%) hue-rotate(200deg); /* Change the color to blue */
+    transition: filter 0.3s ease-in-out; /* Add smooth transition effect */
+  }
+  .like-icon:hover {
+    filter: brightness(0) saturate(100%) hue-rotate(0deg); /* Revert to original color on hover */
+  }
+  
+  
+  /* Add this CSS for the bag modal */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color:#92cbea;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  
+  .footer-column h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .widget {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .widget h3 {
+    margin-top: 0;
+  }
+  /* Style for registration popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fffefe;
+    color: #0056b3;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Style for form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 250px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #0a0909;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.popup-content {
+    max-width: 1000px; /* Adjust the max-width to your desired size */
+    width: 80%; /* You can also use percentage for responsiveness */
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+  .popup-content form label {
+    display: inline-block; /* Change display to inline-block */
+    width: 120px; /* Set a fixed width for labels */
+    margin-bottom: 5px;
+  }
+  
+  .popup-content form input {
+    display: inline-block; /* Display inputs inline-block */
+    width: 200px; /* Calculate width for inputs based on label width */
+    vertical-align: top; /* Align inputs to the top of their container */
+    margin-bottom: 10px;
+    border: 1px solid #020202;
+    border-radius: 5px;
+  }
+.popup-content form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+.popup-content form .form-group label {
+  flex: 0 0 150px; /* Adjust the width as needed */
+  }
+  
+.popup-content form .form-group input {
+    flex: 1;
+    width: 300px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-left: 10px; /* Adjust as needed */
+  }
+  
+  

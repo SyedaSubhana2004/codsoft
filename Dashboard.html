@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <style>
+            .airways a,
+            .airways a:hover,
+            .airways a:visited {
+                text-decoration: none !important;
+                
+            }
+        </style>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images1/logo.png" alt="Dashboard Logo">
+            </div>
+            <a href="index.html" class="active">HOME</a>
+            <a href="#" id="profile">PROFILE</a>
+            <a href="#" id="logout">LOG OUT</a>
+        </div>
+        <div class="content">
+            <div class="container">
+                <h1>Profile Information</h1>
+                <form id="profileForm">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                    
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                    
+                    <label for="profilePicture">Profile Picture:</label>
+                    <input type="file" id="profilePicture" name="profilePicture">
+                    
+                    <label for="bio">Biographical Information:</label>
+                    <textarea id="bio" name="bio" rows="3"></textarea>
+                    
+                    <label for="socialMedia">Social Media Links:</label>
+                    <input type="text" id="socialMedia" name="socialMedia">
+                    
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation">
+                    
+                    <label for="education">Education Background:</label>
+                    <textarea id="education" name="education" rows="3"></textarea>
+                    
+                    <label for="interests">Interests and Preferences:</label>
+                    <textarea id="interests" name="interests" rows="3"></textarea>
+                    
+                    <label for="securityQuestion">Security Question:</label>
+                    <input type="text" id="securityQuestion" name="securityQuestion">
+                    
+                    <label for="securityAnswer">Security Answer:</label>
+                    <input type="text" id="securityAnswer" name="securityAnswer">
+                    
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+            
+            <h1 style="font-size: 50px; color: azure;">TravelXpress</h1>
+            <h3 style="font-size: 25px; font-family:cursive;">Recently used Travel Airlines</h3>
+            <div class="airways-group">
+                <div class="airways">
+                    <a href="https://www.airnewzealand.co.nz/">
+                        <img src="images1/a1.jpg" style="height: 150px;border-radius: 5px;">
+                        <p style="text-decoration: none !important; color: rgb(255, 255, 255);">Air New Zealand </p>
+                    </a>
+                </div>
+                <div class="airways">
+                    <a href="https://www.qatarairways.com/">
+                        <img src="images1/a2.jpg" style="height: 150px;border-radius: 5px;">
+                        <p style="text-decoration: none !important; color: rgb(255, 255, 255);">Qatar Airways</p>
+                    </a>
+                </div>
+                <div class="airways">
+                    <a href="https://www.qantas.com/">
+                        <img src="images1/a3.jpg" style="height: 150px ;border-radius: 5px;">
+                        <p style="text-decoration: none !important; color: rgb(255, 255, 255);">Qantas</p>
+                    </a>
+                </div>
+                <div class="airways">
+                    <a href="https://www.etihad.com/en-in/">
+                        <img src="images1/a4.jpg" style="height: 150px; border-radius: 5px;">
+                        <p style="text-decoration: none !important; color: rgb(255, 255, 255);">Etihad Airways</p>
+                    </a>
+                </div>
+
+            </div>
+            <h2 style="font-family: cursive;">Number of Destinations visited : 15</h2><br>
+            <h2 style="font-family: cursive;">Number of Destinations visited within the Country : 05</h2><br>
+            <h2 style="font-family: cursive;">Number of Destinations visited in foreign  : 15</h2><br>
+            
+    
+    
+    </body>
+    <script src="script1.js"></script>
+</html>

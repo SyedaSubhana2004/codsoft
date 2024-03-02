@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TravelXpress</title>
+    <link rel="icon" type="img/jpg" href="images1/logo.png">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images1/logo.png" alt="Save Children of Gaza">
+        </div>
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About-Us">About Us</a></li>
+                <li><a href="#Destinations">Destinations</a></li>
+                <li><a href="#Todays-Deal">Todays-Deal</a></li>
+            </ul>
+            <div class="right">
+                <a href="Dashboard.html" class="btn" onclick="toggleDashboardPopup()">Dashboard</a>
+              <a href="#login" class="btn">Login</a>
+              <a href="#register" class="btn">Register</a>
+              <a href="#bag" id="bag-icon" class="btn bag-icon">
+                  <img src="images1/bagbg1.png" alt="Bag">
+                  <span id="bag-count">0</span>
+              </a>
+          </div>
+          <div id="loginPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('loginPopup')">&times;</span>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Register Popup -->
+        <div id="registerPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup('registerPopup')">&times;</span>
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="regEmail">Email:</label>
+                    <input type="email" id="regEmail" name="regEmail" required>
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" name="regPassword" required>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+        <div id="paymentPopup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePaymentPopup()">&times;</span>
+                <h2>Payment</h2>
+                <h1>HEYYYYYYAAAAA THANK YOUUU FOR THE PAYMENT</h1>
+            </div>
+        </div>
+        
+        
+    </nav> 
+    <section id="Home">  
+      <div class="slideshow-container">
+          <div class="slide fade">
+              <img src="images1/tbs6.jpg" alt="Image 1">
+              <div class="text-overlay">
+                  <h1>TravelXpress</h1>
+                  <h5>Explore your life with Travel where you want</h5>
+              </div>
+          </div>
+          <div class="slide fade">
+              <img src="images1/tbs7.jpg" alt="Image 2">
+              <div class="text-overlay">
+                  <h1>TravelXpress</h1>
+                  <h5>Explore your life with Travel where you want</h5>
+              </div>
+          </div>
+          <div class="slide fade">
+              <img src="images1/tbs8.jpg" alt="Image 3">
+              <div class="text-overlay">
+                  <h1>TravelXpress</h1>
+                  <h5>Explore your life with Travel where you want</h5>
+              </div>
+          </div>
+          <div class="slide fade">
+              <img src="images1/tbs11.jpg" alt="Image 4">
+              <div class="text-overlay">
+                  <h1>TravelXpress</h1>
+                  <h5>Explore your life with Travel where you want</h5>
+              </div>
+          </div>
+      </div>
+    </section>
+  
+    <section id="About-Us">
+        <div class="container6">
+            <img src="images1/aboutus1.png" class="animated-image" style="height: 200px;">
+            <img src="images1/tbs3.jpg" height="400px " id="image1">
+            <h1 id="mytext1"> About TravelXpress</h1>
+            <h1 id="mytext2"> We're truely dedicated to make Your Travel Experience Best  </h1>
+            <p id="mytext1">Top Tour Operators and Travel Agency. We have offered in total 793 tours and holidays throughout the world. Combined we have received 1532 customer reviews and an average rating of 5 out of 5 stars.</p>
+            <p id="mytext1">Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
+        </div>
+    </section>
+  
+
+    <section id="Destinations">
+      <div class="container2">
+          <h1 class="title">Perfect <span class="highlight">Tour Packages</span></h1>
+          <pre id="mytext3">Travel has helped us to understand the meaning of life and it has helped us become better people.
+      Each time we travel, we see the world with new eyes.</pre>
+          <div>
+              <div class="destination-group">
+                  <div class="destination">
+                      <img src="images1/tbs1.jpg" alt="Destination 1" style="text-shadow: 10px 10px 10px;">
+                      <img src="images1/heart.png" alt="Like Icon" class="like-icon">
+                      <h3>CARIBBEAN SEA</h3>
+                      <p>Cayman Trench, between Cuba and Jamaica.</p>
+                      <div class="reviews">
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                        
+                      </div>
+                      <div class="additional-info">
+                          <p class="price">3 DAYS & 2 NIGHTS @   $5499</p>
+                          <button class="book-now">Book Now</button>
+                      </div>
+                  </div>
+                  <div class="destination">
+                      <img src="images1/tbs2.jpg" alt="Destination 1" style="text-shadow: 10px 10px 10px;">
+                      <img src="images1/heart.png" alt="Like Icon" class="like-icon">
+                      <h3>El Matador State Beach</h3>
+                      <p>32350 Pacific Coast Hwy, Malibu, CA 90265, USA</p>
+                      <p> 83 Reviews</p>
+                      <div class="reviews">
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          
+                      </div>
+                      <div class="additional-info">
+                          <p class="price"> 3 DAYS & 2 NIGHTS @   $2399</p>
+                          <button class="book-now">Book Now</button>
+                      </div>
+                  </div>
+                  <div class="destination">
+                      <img src="images1/tbs3.jpg" alt="Destination 1" style="text-shadow: 10px 10px 10px;">
+                      <img src="images1/heart.png" alt="Like Icon" class="like-icon">
+                      <h3>Cappadocia</h3>
+                      <p>southwest of the major city Kayseri,</p>
+                      <p> 125 Reviews</p>
+                      <div class="reviews">
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          
+                      </div>
+                      <div class="additional-info">
+                          <p class="price"> 3 DAYS & 2 NIGHTS @   $4299</p>
+                          <button class="book-now">Book Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div>
+              <div class="destination-group">
+                  <div class="destination">
+                      <img src="images1/tbs4.jpg" alt="Destination 1" style="text-shadow: 10px 10px 10px;">
+                      <img src="images1/heart.png" alt="Like Icon" class="like-icon">
+                      <h3>SKAGSANDEN BEACH</h3>
+                      <p>Aurora at skagsanden beach lofoten islands norway.</p>
+                      <p> 195 Reviews</p>
+                      <div class="reviews">
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          
+                      </div>
+                      <div class="additional-info">
+                          <p class="price"> 3 DAYS & 2 NIGHTS @   $5699</p>
+                          <button class="book-now">Book Now</button>
+                      </div>
+                  </div>
+                  <div class="destination">
+                      <img src="images1/tbs8.jpg" alt="Destination 1" style="text-shadow: 10px 10px 10px;">
+                      <img src="images1/heart.png" alt="Like Icon" class="like-icon">
+                      <h3>MALDIVES</h3>
+                      <p> North-Central Indian Ocean.</p>
+                      <p> 145 Reviews</p>
+                      <div class="reviews">
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          
+                      </div>
+                      <div class="additional-info">
+                          <p class="price"> 3 DAYS & 2 NIGHTS @   $3999</p>
+                          <button class="book-now">Book Now</button>
+                      </div>
+                  </div>
+                  <div class="destination">
+                      <img src="images1/tbs11.jpg" alt="Destination 1" style="text-shadow: 10px 10px 10px;">
+                      <img src="images1/heart.png" alt="Like Icon" class="like-icon">
+                      <h3>Banff National Park</h3>
+                      <p>224 Banff Avenue Banff, AB T1L 1A1</p>
+                      <p> 93 Reviews</p>
+                      <div class="reviews">
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          <span class="star">&#9733;</span>
+                          
+                      </div>
+                      <div class="additional-info">
+                          <p class="price">3 DAYS & 2 NIGHTS @   $5999</p>
+                          <button class="book-now">Book Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="Todays-Deal" style="background-image: url('images1/tbs7.jpg'); background-size: cover; background-position: center;">
+      <section id="Discount-Banner" style="background-color: #ff0000; color: white; text-align: center; padding: 20px;">
+          <marquee behavior="scroll" direction="left" style="font-size: 24px;">
+              50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF! &nbsp;&nbsp;&nbsp;&nbsp; 50% OFF!
+          </marquee>
+      </section>
+      <div class="container4">
+          <h1 style="text-align: center; color: white; font-size: 50px; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Today's Deals</h1>
+          <div class="destination-container">
+              <div class="destination">
+                  <img src="images1/tbs12.jpg" alt="Destination 1" style="text-shadow: 10px 10px 10px;">
+                  <img src="images1/heart.png" alt="Like Icon" class="like-icon">
+                  <h3>ROME</h3>
+                  <p>St. Angelo Bridge.</p>
+                  <p>209 Reviews</p>
+                  <div class="reviews">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      
+                  </div>
+                  <div class="additional-info">
+                      <p class="price">3 DAYS & 2 NIGHTS @ $3999 JUST @ $1999</p>
+                      <button class="book-now">Book Now</button>
+                  </div>
+              </div>
+              <div class="destination">
+                  <img src="images1/tbs17.jpg" alt="Destination 1" style="text-shadow: 10px 10px 10px;">
+                  <img src="images1/heart.png" alt="Like Icon" class="like-icon">
+                  <h3>BORA BORA</h3>
+                  <p>Island in French Polynes</p>
+                  <p>248 Reviews</p>
+                  <div class="reviews">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      
+                  </div>
+                  <div class="additional-info">
+                      <p class="price">3 DAYS & 2 NIGHTS @ $3999 JUST @ $1999</p>
+                      <button class="book-now">Book Now</button>
+                  </div>
+              </div>
+              <div class="destination">
+                  <img src="images1/tbs14.jpg" alt="Destination 1" style="text-shadow: 10px 10px 10px;">
+                  <img src="images1/heart.png" alt="Like Icon" class="like-icon">
+                  <h3>SOUTH KOREA</h3>
+                  <p>Country in East Asia</p>
+                  <p>562 Reviews</p>
+                  <div class="reviews">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      
+                  </div>
+                  <div class="additional-info">
+                      <p class="price">3 DAYS & 2 NIGHTS @ $3999 JUST @ $1999</p>
+                      <button class="book-now">Book Now</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h2>About Us</h2>
+            <p>We're truely dedicated to make Your Travel Experience Best.
+            Top Tour Operators and Travel Agency. We have offered in total 793 tours and holidays throughout the world. Combined we have received 1532 customer reviews and an average rating of 5 out of 5 stars.
+            
+            Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</li>
+                <li><i class="fas fa-phone-alt"></i> +123-456-7890</li>
+                <li><i class="fas fa-envelope"></i> info@example.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 TravelXpress. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  </body>
+  </html>
